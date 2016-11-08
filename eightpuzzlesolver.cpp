@@ -146,6 +146,7 @@ void EightPuzzleSolver::on_LineTarget9_returnPressed()
  * then analyze it to find the solution*/
 void EightPuzzleSolver::on_pushButtonSolve_pressed()
 {
+    exploredMoves.clear();
     paths.clear();
     nodeList.clear();
     currentMove = 0;
