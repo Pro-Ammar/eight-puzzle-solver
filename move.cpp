@@ -26,8 +26,11 @@ QString Move::getKey(){
 }
 void Move::estimateKey(){
     this->key="";
-    for(short j=0;j<move.size();j++)
+    for(short j=0;j<move.size();j++){
         this->key+=(this->move[j].getName().isEmpty())?" ":this->move[j].getName();
+        if(j!=(move.size()-1))
+	        this->key+=",";
+    }
 }
 int Move::countInversions(){
     unsigned char inversions =0;
