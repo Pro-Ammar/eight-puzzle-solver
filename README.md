@@ -8,7 +8,7 @@ I used a composite heuristic which consists of the number of nodes which are not
 The second one was the number of inversions divided by 2 to make it admissible.
 The sum of the two is then divided by two too, for ensuring admissibility.
 
-Note: THe number of inversions = count( (a,b) ) such that a and b are nodes but not the same,
+Note: The number of inversions = count( (a,b) ) such that a and b are nodes but not the same,
 and Current_Position(a) < Current_Position(b) and Final_Position(a) > Final_Position(b)
 
 The program can estimate if the puzzle is solvable or not by counting the number of inversions
